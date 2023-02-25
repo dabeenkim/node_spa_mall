@@ -95,6 +95,8 @@ router.post("/goods/", async (req, res) => {
         });
     }
 
+    
+
     const createdGoods = await Goods.create({ goodsId, name, thumbnailUrl, category, price });
 
     res.json({ goods: createdGoods });
